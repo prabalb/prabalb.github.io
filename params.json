@@ -1,6 +1,6 @@
 {
   "name": "Prabalb.GitHub.io-alcohol.prediction",
   "tagline": "Usage of three different machine learning algorithms to predict the alcohol consumption level",
-  "body": "This project compares the prediction accuracies of different machine learning algorithms, for alcohol consumption level among school students. In this pursuit, three machine learning models, such as Decision Tree, Support Vector Machine and Naïve-Bayes classifier are used on two real life data sets. Additionally, the importance of various features are deduced, that highly impact the prediction accuracy of an algorithm.\r\n\r\n![](https://github.com/prabalb/prabalb.github.io-alcohol.prediction/blob/master/graphs/pred_dt_mat.png)",
+  "body": "This project compares the prediction accuracies of different machine learning algorithms, for alcohol consumption level among school students. In this pursuit, three machine learning models, such as Decision Tree, Support Vector Machine and Naïve-Bayes classifier are used on two real life data sets. Additionally, the importance of various features are deduced, that highly impact the prediction accuracy of an algorithm.\r\n\r\n![](https://github.com/prabalb/prabalb.github.io-alcohol.prediction/blob/master/graphs/pred_dt_mat.png)\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
