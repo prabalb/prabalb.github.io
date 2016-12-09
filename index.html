@@ -88,6 +88,34 @@
 
 <p>The pi-chart above is created based on <em>Information Gain</em> analysis on a Decision Tree model. A higher percentage indicates a greater importance. As each split in a decision tree is based on a maximum information gain decision, a split on a feature closer to the root of the tree must mean that the feature had more information gain than a split with a different feature lower in the tree. So, for a given feature F, that occurs in several splits within the tree, F's average distance away from the root has been calculated. All the features are then ranked by average distance, with the lowest average being the most valuable feature. The pi-chart indicates that sex, health and age are three most important features.</p>
 
+<h2>
+<a id="summary-and-conclusion" class="anchor" href="#summary-and-conclusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SUMMARY AND CONCLUSION</h2>
+
+<ul>
+<li>SVM classifier gives the best result in terms of average accuracy.</li>
+<li>RBF kernel gives better accuracy with respect to Sigmoid kernel for SVM.</li>
+<li>Multinomial rule gives better accuracy with respect to Gaussian for NBC.</li>
+<li>In general, a higher accuracy is obtained for a larger value of <em>Th</em>.</li>
+<li>Sex, health and age are the top three important features.</li>
+</ul>
+
+<h2>
+<a id="acknowledgement" class="anchor" href="#acknowledgement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACKNOWLEDGEMENT</h2>
+
+<p>I thank Dr. Nicholas Flann for his valuable insight to this project.</p>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>REFERENCES</h2>
+
+<ul>
+<li><a href="http://archive.ics.uci.edu/ml/datasets/STUDENT+ALCOHOL+CONSUMPTION#">http://archive.ics.uci.edu/ml/datasets/STUDENT+ALCOHOL+CONSUMPTION#</a></li>
+<li>libSVM, <a href="https://www.csie.ntu.edu.tw/%7Ecjlin/libsvm/">https://www.csie.ntu.edu.tw/~cjlin/libsvm/</a>
+</li>
+<li>Naïve-Bayes classifier, <a href="https://github.com/timnugent/naive-bayes">https://github.com/timnugent/naive-bayes</a>
+</li>
+<li><a href="http://arstechnica.com/science/2016/03/drunk-tweeting-computer-algorithm/">http://arstechnica.com/science/2016/03/drunk-tweeting-computer-algorithm/</a></li>
+</ul>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/prabalb/prabalb.github.io-alcohol.prediction">Prediction of Student Alcohol Consumption Level Using Various Machine Learning Techniques</a> is maintained by <a href="https://github.com/prabalb">prabalb</a>.</span>
 
