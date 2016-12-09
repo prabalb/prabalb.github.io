@@ -38,6 +38,26 @@
 
 <p>The original data was integrated into two data-sets related to Mathematics (with 395 examples) and the Portuguese language (649 records) classes. Contributors: Paulo Cortez and Alice Silva.</p>
 
+<h2>
+<a id="methodology" class="anchor" href="#methodology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>METHODOLOGY</h2>
+
+<h3>
+<a id="data-pre-processing" class="anchor" href="#data-pre-processing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Pre-processing</h3>
+
+<ul>
+<li><p><strong>Finding a Binary Output</strong>: The dataset has two features, viz., <em>Dalc</em> (workday alcohol consumption) and <em>Walc</em> (weekend alcohol consumption), both in the range of 1 (very low) to 5 (very high). Derived output: Alc = (Walc X 2 + Dalc X 5) / 7, again, in the range of 1 – 5. Derived binary output: <em><strong>Alc_bin = Alc &lt; Th ? 0 : 1</strong></em> (where 0 and 1 denote non-alcoholic and alcoholic, respectively). <em><strong>Different values of Th are explored (e.g., 2, 2.5 and 3).</strong></em></p></li>
+<li><p><strong>Filtering poorly correlated features</strong>: Using correlation co-efficient, 4 features were discarded for which the correlation values are less than a given threshold.</p></li>
+</ul>
+
+<h3>
+<a id="machine-learning-models" class="anchor" href="#machine-learning-models" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Machine Learning Models</h3>
+
+<ul>
+<li><p><strong>Decision Tree (DT)</strong>: ): <em>Information Gain</em> based analysis is used for prediction and feature extraction. Random validation (RV) and 10 –fold Cross Validation (XV) techniques are used for determining prediction accuracy.</p></li>
+<li><p><strong>Support Vector Machine (SVM)</strong>: A multi-class SVM with C-support vector classification is considered. The default parameters for the libSVM tool are used. Two kernel types (e.g., Radial Basis Function (RBF) and Sigmoid) are explored. Original categorical features are converted into discrete features in a sparse format.</p></li>
+<li><p><strong>Naïve-Bayes Classifier (NBC)</strong>: Gaussian and Multinomial decision rules are explored. The results from Bernoulli decision rule are discarded due to extremely poor accuracy. Laplace smoothing parameter is used for the multinomial decision rule. Original categorical features are converted into discrete features in a non-sparse format.</p></li>
+</ul>
+
 <p><img src="https://cloud.githubusercontent.com/assets/20998518/21065745/2a5003d0-be1f-11e6-8ed2-c283b78c3e06.png" alt="pred_dt_mat">
 <img src="https://cloud.githubusercontent.com/assets/20998518/21065744/2a4c1ba8-be1f-11e6-8e6a-e69fa76e7f4d.png" alt="pred_dt_por"></p>
 
