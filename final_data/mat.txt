@@ -1,0 +1,19 @@
+Math
+
+T<2:   
+====
+DT: Random = 60.38, 10-fold = 59.45
+SVM: (Type == Sigmoid) = 71.64, (Type = RBF) = 77.47
+NBC: (Type == Gaussian) = 72.91, (Type == Multinomial) = 73.92
+
+T<2.5: 
+=====
+DT: Random = 57.47, 10-fold = 65.46
+SVM: (Kernel == Sigmoid) = 87.85, (Kernel = RBF) = 88.61
+NBC: (Type == Gaussian) = 83.29, (Type == Multinomial) = 84.56
+
+T<3:
+====
+DT: Random = 67.84, 10-fold = 63.88
+SVM: (Kernel == Sigmoid) = 89.11, (Kernel = RBF) = 89.11
+NBC: (Type == Gaussian) = 81.27, (Type == Multinomial) = 89.37

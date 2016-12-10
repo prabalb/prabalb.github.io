@@ -1,0 +1,103 @@
+Name - Prabal Basu
+A# - A02049867
+
+Source files - decisionTree.h, decisionTree.cpp, main.cpp
+Makefile - makefile
+Executable - runProg
+How to compile - make
+How to run - ./runProg
+
+Typical Output for schillingData.txt:
+---------------------------------------------------------------------------
+:$./runProg 
+Enter the training file name: schillingData.txt
+Do you want to skip the random-split (80/20) based validation [Y/N]: N
+Performing random-split based validation ...
+Following result is for 10 random splits ...
+Test Run   |   Accuracy on Test Set (%)
+1          |   58.8685
+2          |   74.6177
+3          |   72.9358
+4          |   77.2171
+5          |   72.63
+6          |   71.7125
+7          |   72.63
+8          |   73.5474
+9          |   68.9602
+10         |   69.419
+
+Average accuracy(%): 71.2538
+
+Time(s) : Random-Split Based Validation : Wall Time : 0.732817, CPU Time : 0.731252
+
+Do you want to skip the 10-fold corss-validation [Y/N]: N
+Performing 10-fold cross-validation ...
+Following result is for 10 splits ...
+Test Run   |   Accuracy on Test Set (%)
+1          |   71.5596
+2          |   76.1468
+3          |   78.2875
+4          |   53.5168
+5          |   77.0642
+6          |   92.0489
+7          |   61.4679
+8          |   73.0887
+9          |   72.1713
+10         |   78.7234
+
+Average accuracy(%): 73.4075
+
+Time(s) : 10-fold Cross-Validation : Wall Time : 0.677963, CPU Time : 0.676427
+
+That's all folks!
+---------------------------------------------------------------------------
+
+Typical Output for restaurant.txt
+---------------------------------------------------------------------------
+./runProg 
+Enter the training file name: restaurant.txt
+Do you want to skip the random-split (80/20) based validation [Y/N]: N
+Performing random-split based validation ...
+Following result is for 10 random splits ...
+Test Run   |   Accuracy on Test Set (%)
+1          |   100
+2          |   50
+3          |   100
+4          |   100
+5          |   100
+6          |   50
+7          |   50
+8          |   50
+9          |   100
+10         |   100
+
+Average accuracy(%): 80
+
+Time(s) : Random-Split Based Validation : Wall Time : 0.00454903, CPU Time : 0.00453
+
+Do you want to skip the 10-fold corss-validation [Y/N]: N
+Performing 10-fold cross-validation ...
+Following result is for 10 splits ...
+Test Run   |   Accuracy on Test Set (%)
+1          |   100
+2          |   0
+3          |   100
+4          |   0
+5          |   0
+6          |   100
+7          |   100
+8          |   100
+9          |   0
+10         |   33.3333
+
+Average accuracy(%): 53.3333
+
+Time(s) : 10-fold Cross-Validation : Wall Time : 0.00452399, CPU Time : 0.004519
+
+That's all folks!
+---------------------------------------------------------------------------
+
+Note: 
+(1) Please use the .txt files submitted with this assignment. A few attribute related information has been padded at the top of the .txt files, that the program parses.
+(2) The program works for all the .txt files submitted with this assignment.
+

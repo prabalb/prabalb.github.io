@@ -1,0 +1,34 @@
+set size ratio 0.5 
+set auto x
+set yrange [ 0 : 100 ]
+#set terminal postscript color solid eps 21 size 6,3.5
+set term png transparent truecolor size 40cm, 30cm
+set output 'pred_dt_mat.png'
+set grid y linecolor rgb "#000000" lw 4
+set style data histogram
+set style histogram cluster gap 1
+set style fill solid border -1
+set style fill pattern border -1
+#set xlabel "Traffic" font "Times-Roman, 34"  
+set ylabel "Accuracy(%)" font "Times-Roman, 26" offset 0.5,0,1
+set xtic rotate by 55 scale 0
+#set xtics font "Times-Roman-bold, 26" 
+set xtics font "Times-Roman, 20" right
+set ytics font "Times-Roman, 18" offset 0.2, 0
+#set key font "Times-Roman, 24  offset -1,0,1
+set tmarg 2.5 
+set key at 2.5,125.5,0 horizontal font "Times-Roman, 24
+set key width 0.5 spacing 1.5 
+set key samplen 2
+#unset key 
+offset=0.9
+plot 'pred_dt_mat.dat' using 2:xtic(1) title column(2) linecolor rgb "red" fill solid 0.5, \
+                                  '' using 3 title column(3) linecolor rgb "red" fill solid 1, \
+                                  '' using 4 title column(4) linecolor rgb "green" fill solid 0.5, \
+                                  '' using 5 title column(5) linecolor rgb "green" fill solid 1, \
+                                  '' using 6 title column(6) linecolor rgb "blue" fill solid 0.5, \
+                                  '' using 7 title column(7) linecolor rgb "blue" fill solid 1
+#
+#pause -1 "<cr> to change the gap between clusters"
+#
+
